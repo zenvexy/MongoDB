@@ -1,0 +1,143 @@
+:root {
+  font-family: Arial, sans-serif;
+  color: #222;
+  background: #f5f5f5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+  line-height: 1.5;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+}
+
+nav a,
+button {
+  padding: 10px 14px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  color: #222;
+  background: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav a.active,
+button[type="submit"] {
+  color: white;
+  background: #333;
+}
+
+td button {
+  margin-right: 6px;
+}
+
+main {
+  margin-top: 32px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) auto auto;
+  gap: 14px;
+  align-items: end;
+  margin-bottom: 28px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background: white;
+}
+
+form h3 {
+  grid-column: 1 / -1;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  font: inherit;
+}
+
+#buscaProdutos,
+#buscaPedidos {
+  max-width: 320px;
+  margin-bottom: 14px;
+}
+
+#resumoProdutos,
+#resumoPedidos,
+#mensagem {
+  min-height: 24px;
+  margin: 0 0 14px;
+}
+
+.erro {
+  color: #a00;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 14px;
+  }
+
+  header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+}

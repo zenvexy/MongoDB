@@ -1,0 +1,230 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: My API Collection
+meta:
+  id: wrk_78de0ed224664bd881a6d2120cdd21c7
+  created: 1795039391854
+  modified: 1795039391854
+  description: ""
+collection:
+  - name: Loja Salgados
+    meta:
+      id: fld_33512228efed414e91f0c15625576d9d
+      created: 1795039404383
+      modified: 1795039404383
+      sortKey: -1795039404383
+      description: ""
+    children:
+      - name: Produtos
+        meta:
+          id: fld_da389a17a48347018fa5ef2ab3ccae3f
+          created: 1795039415295
+          modified: 1795039421188
+          sortKey: -1795039415295
+          description: ""
+        children:
+          - url: http://localhost:3000/produtos/excluir/
+            name: Excluir
+            meta:
+              id: req_3f51c73978cf439ab35608fd143f7908
+              created: 1795039451130
+              modified: 1795039633505
+              isPrivate: false
+              description: ""
+              sortKey: -1795039451130
+            method: DELETE
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/produtos/atualizar/6afe27650b311d00c87f3933
+            name: Atualizar
+            meta:
+              id: req_40c9d6f598bc49beaaff3ee54e42d643
+              created: 1795039452575
+              modified: 1795042243484
+              isPrivate: false
+              description: ""
+              sortKey: -1795039452575
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"nome": "teste",
+                	"preco": 5,
+                	"estoque": 23
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/produtos/cadastrar
+            name: Cadastrar
+            meta:
+              id: req_e0163c3637914b12a4be992ceff726fe
+              created: 1795039453953
+              modified: 1795041123855
+              isPrivate: false
+              description: ""
+              sortKey: -1795039453953
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"nome": "teste",
+                	"preco": 7,
+                	"estoque": 23
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/produtos/listar
+            name: Listar
+            meta:
+              id: req_7b1f368e70ce40b5a59868c4859767f8
+              created: 1795039455239
+              modified: 1795039615597
+              isPrivate: false
+              description: ""
+              sortKey: -1795039455239
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Pedidos
+        meta:
+          id: fld_9cd1e67b9f484c46892afe90fdaa9322
+          created: 1795039435292
+          modified: 1795039435292
+          sortKey: -1795039435292
+          description: ""
+        children:
+          - url: http://localhost:3000/pedidos/excluir/
+            name: Excluir
+            meta:
+              id: req_3ec3f8956fa84cda86a6d3785e703418
+              created: 1795039439153
+              modified: 1795039589536
+              isPrivate: false
+              description: ""
+              sortKey: -1795039439153
+            method: DELETE
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/pedidos/atualizar/
+            name: Atualizar
+            meta:
+              id: req_c0cd54bc36324f56aa2291ea27a4b8a4
+              created: 1795039444409
+              modified: 1795039646535
+              isPrivate: false
+              description: ""
+              sortKey: -1795039444409
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/pedidos/cadastrar
+            name: Cadastrar
+            meta:
+              id: req_789ad04e6b0545eeac01810ea914e68a
+              created: 1795039445855
+              modified: 1795042315249
+              isPrivate: false
+              description: ""
+              sortKey: -1795039445855
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/pedidos/listar
+            name: Listar
+            meta:
+              id: req_043d0afc8cd7483b9a07fedfc15b1939
+              created: 1795039447624
+              modified: 1795039553838
+              isPrivate: false
+              description: ""
+              sortKey: -1795039447624
+            method: GET
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_82e039d275a1a73bf5cddb3f497f209f976bccfe
+    created: 1795039391860
+    modified: 1795039391860
+environments:
+  name: Base Environment
+  meta:
+    id: env_82e039d275a1a73bf5cddb3f497f209f976bccfe
+    created: 1795039391858
+    modified: 1795039391858
+    isPrivate: false
