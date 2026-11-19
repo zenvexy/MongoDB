@@ -2,6 +2,8 @@
 
 Aplicação web para cadastrar produtos e registrar pedidos de uma padaria. O projeto possui uma API REST em Node.js, um front-end estático servido pela própria API, MongoDB Atlas como banco de dados e Prisma como ORM.
 
+> Detalhe! Se quiser utilizar o link do pages, mantenha o servidor ligado.
+
 ## O que foi desenvolvido
 
 - Cadastro, listagem, edição, busca e exclusão de produtos.
