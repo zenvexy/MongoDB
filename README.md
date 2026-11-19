@@ -62,18 +62,6 @@ Antes de começar, instale:
 - Git, caso queira clonar o repositório.
 - Insomnia ou Postman, opcionalmente, para testar a API.
 
-## Comandos principais
-
-Execute dentro de `api`:
-
-```bash
-npm install
-npx prisma generate
-npx prisma db push
-npx prisma db seed
-npm run dev
-```
-
 ## Como executar o projeto
 
 ### 1. Baixar o projeto
